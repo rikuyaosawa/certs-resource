@@ -1,8 +1,8 @@
-# Basic Theory (1)
+# Basic Theory
 
 Table of Contents
 
-- [Basic Theory (1)](#basic-theory-1)
+- [Basic Theory](#basic-theory)
   - [Data Unit](#data-unit)
   - [Number Systems](#number-systems)
     - [Decimal Types](#decimal-types)
