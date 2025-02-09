@@ -10,6 +10,11 @@ Table of Contents
   - [Negative Binary](#negative-binary)
   - [Four Arithmetic Calculation of Binary Number](#four-arithmetic-calculation-of-binary-number)
   - [Shift Operations](#shift-operations)
+  - [Venn Diagram](#venn-diagram)
+  - [Logical Operators](#logical-operators)
+  - [Truth Table](#truth-table)
+  - [Logical Circuits](#logical-circuits)
+    - [MIL-STD Logic Symbols](#mil-std-logic-symbols)
 
 ## Data Unit
 
@@ -332,3 +337,113 @@ Right Arithmetic Shift (1 bit): 1101 (-5 in decimal) (11 / 2 = 5.5, rounded to -
 > <img src="https://miro.medium.com/v2/resize:fit:1400/1*PQnjqDxwt976o0xp68G6qA.png" alt="Overflow" width="400"/>
 >
 > More on it: [Overflow Error](https://www.lenovo.com/in/en/glossary/overflow-error/)
+
+## Venn Diagram
+
+A **Venn diagram** (ベン図) is a visual tool used to show the relationships between different sets or groups of items. It uses **overlapping circles** to represent these sets, illustrating how they share common elements (intersections) or have distinct elements (differences).
+
+**Symbols:**
+
+| **Symbol** | **Meaning**   | **Description**                       |
+| ---------- | ------------- | ------------------------------------- |
+| ∪          | Union         | All elements from both sets           |
+| ∩          | Intersection  | Elements common to both sets          |
+| ∖ or ー    | Difference    | Elements in one set but not the other |
+| A′ or Ac   | Complement    | Elements not in the set               |
+| ⊆          | Subset        | All elements of A are in B            |
+| ⊂          | Proper Subset | A is a subset of B but not equal      |
+| ∅          | Empty Set     | A set with no elements                |
+
+## Logical Operators
+
+(論理演算子)
+
+| **Operator** | **Symbol**    | **Meaning**                                                   |
+| ------------ | ------------- | ------------------------------------------------------------- |
+| **AND**      | ∧ or **&&**   | True if **both** conditions are true                          |
+| **OR**       | ∨ or **\|\|** | True if **at least one** condition is true                    |
+| **NOT**      | ¬ or **!**    | Inverts the truth value (True → False, False → True)          |
+| **XOR**      | ⊕             | True if **only one** of the conditions is true (exclusive OR) |
+| **NAND**     | ↑             | Opposite of AND; true unless both are true                    |
+| **NOR**      | ↓             | Opposite of OR; true only if both are false                   |
+
+## Truth Table
+
+(真理値表)
+
+1. **AND ( A ∧ B )** (論理積)
+
+| **A** | **B** | **A AND B** |
+| ----- | ----- | ----------- |
+| 0     | 0     | 0           |
+| 0     | 1     | 0           |
+| 1     | 0     | 0           |
+| 1     | 1     | 1           |
+
+2. **OR ( A ∨ B )** (論理和)
+
+| **A** | **B** | **A OR B** |
+| ----- | ----- | ---------- |
+| 0     | 0     | 0          |
+| 0     | 1     | 1          |
+| 1     | 0     | 1          |
+| 1     | 1     | 1          |
+
+3. **NOT ( ¬A )** (否定)
+
+| **A** | **NOT A** |
+| ----- | --------- |
+| 0     | 1         |
+| 1     | 0         |
+
+4. **XOR ( A ⊕ B )** (排他的論理和)
+
+| **A** | **B** | **A XOR B** |
+| ----- | ----- | ----------- |
+| 0     | 0     | 0           |
+| 0     | 1     | 1           |
+| 1     | 0     | 1           |
+| 1     | 1     | 0           |
+
+5. **NAND ( A ↑ B )** (否定論理積)
+
+| **A** | **B** | **A NAND B** |
+| ----- | ----- | ------------ |
+| 0     | 0     | 1            |
+| 0     | 1     | 1            |
+| 1     | 0     | 1            |
+| 1     | 1     | 0            |
+
+6. **NOR ( A ↓ B )** (否定論理和)
+
+| **A** | **B** | **A NOR B** |
+| ----- | ----- | ----------- |
+| 0     | 0     | 1           |
+| 0     | 1     | 0           |
+| 1     | 0     | 0           |
+| 1     | 1     | 0           |
+
+**Logical Operators Precedence**
+
+Order from Highest to Lowest:
+
+1. **NOT**
+2. **AND**
+3. **OR**
+4. **XOR**
+
+## Logical Circuits
+
+(論理回路)
+
+A **logical circuit** is a network of interconnected **logic gates** that process binary inputs (0 and 1) to produce specific outputs based on **Boolean algebra**. These circuits form the foundation of **digital electronics**, including computers, calculators, and more.
+
+- **Inputs**: Binary signals (0 = LOW, 1 = HIGH).
+- **Outputs**: Resulting binary signals after processing.
+- **Components**: Built using **logic gates** like AND, OR, NOT, NAND, NOR, XOR, and XNOR.
+
+### MIL-STD Logic Symbols
+
+The **MIL-STD** (MIL 記号) symbols are standardized by the **U.S. Department of Defense** for use in military and aerospace electronic schematics. These symbols are more **abstract** and less graphical than the conventional **ANSI** or **IEC** symbols, focusing on clarity in complex circuit diagrams.
+
+![Basic logic gates figure](https://www.microcontrollertips.com/wp-content/uploads/2022/05/What-are-basic-logic-gates-figure-1.jpg)
