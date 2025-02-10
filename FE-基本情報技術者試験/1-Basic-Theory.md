@@ -15,6 +15,11 @@ Table of Contents
   - [Truth Table](#truth-table)
   - [Logical Circuits](#logical-circuits)
     - [MIL-STD Logic Symbols](#mil-std-logic-symbols)
+  - [Circuit Adder](#circuit-adder)
+  - [Mathematical Notation](#mathematical-notation)
+    - [**Polish Notation (Prefix Notation)**](#polish-notation-prefix-notation)
+    - [**Reverse Polish Notation (RPN)**](#reverse-polish-notation-rpn)
+  - [Automaton (Automata Theory)](#automaton-automata-theory)
 
 ## Data Unit
 
@@ -447,3 +452,100 @@ A **logical circuit** is a network of interconnected **logic gates** that proces
 The **MIL-STD** (MIL 記号) symbols are standardized by the **U.S. Department of Defense** for use in military and aerospace electronic schematics. These symbols are more **abstract** and less graphical than the conventional **ANSI** or **IEC** symbols, focusing on clarity in complex circuit diagrams.
 
 ![Basic logic gates figure](https://www.microcontrollertips.com/wp-content/uploads/2022/05/What-are-basic-logic-gates-figure-1.jpg)
+
+## Circuit Adder
+
+(加算回路)
+
+**An adder is a digital circuit that performs arithmetic operations, specifically addition.** It is a fundamental building block in computer architecture and plays a crucial role in computations, data processing, and mathematical calculations.
+How does an adder work?
+
+An adder operates on binary numbers, taking two inputs and producing a sum output. It consists of logic gates that perform basic addition operations based on the binary representation of the numbers. The inputs are fed into the adder, and the output is the sum of the inputs, along with a carry-out signal if the result exceeds the number of bits the adder can handle.
+What are the types of adders?
+
+There are several types of adders, including half adders, full adders, ripple carry adders, look-ahead carry adders, carry skip adders, and carry-select adders. Each type has its own characteristics, trade-offs, and applications.
+What is a half adder?
+
+**Half Adder (半加算器)**
+
+A half adder is the simplest form of an adder. It takes two single-bit inputs, A and B, and produces two outputs: the sum (S) and the carry (C). The sum output represents the least significant bit of the addition, while the carry output indicates whether there is a carry-over to the next bit.
+What is a full adder?
+
+**Full Adder (全加算器)**
+
+A full adder is an extension of a half adder. It takes three inputs: A, B, and a carry-in (Cin), and produces two outputs: the sum (S) and the carry (C). The carry-in represents the carry-over from the previous bit, allowing full adders to perform multi-bit additions.
+
+[More types of adder ↗](https://www.lenovo.com/us/en/glossary/adder/)
+
+## Mathematical Notation
+
+### **Polish Notation (Prefix Notation)**
+
+(ポーランド表記法)
+
+**Polish Notation**, also known as **Prefix Notation**, is a mathematical notation where **operators** are placed before their operands. It was introduced by **Jan Łukasiewicz**, a Polish mathematician and logician, to simplify logic expressions and eliminate the need for parentheses.
+
+**Key Characteristics of Polish Notation:**
+
+- **No Parentheses Needed**: The order of operations is inherently clear, so there's **no need for brackets** to dictate precedence.
+
+- **Operators First**: Operators come **before** their operands, unlike traditional infix notation (e.g., \( A + B \)).
+
+- **Unambiguous**: The notation removes ambiguity because the sequence in which operations are performed is explicitly defined by the order of symbols.
+
+**Example Comparisons:**
+
+| **Expression Type** | **Expression** |
+| ------------------- | -------------- |
+| **Infix Notation**  | (3 + 4) × 5    |
+| **Polish (Prefix)** | × + 3 4 5      |
+
+- In Infix: You evaluate (3 + 4) first, then multiply by 5.
+- In Polish: The order is clear without parentheses. First add ( 3 + 4 ), then multiply the result by 5.
+
+To evaluate a Polish notation expression:
+
+1. **Start from the right** and move left.
+2. **Apply the first operator** you encounter to the next two operands.
+3. **Continue** until you reach the final result.
+
+### **Reverse Polish Notation (RPN)**
+
+(逆ポーランド表記法)
+
+**Reverse Polish Notation (RPN)**, or **Postfix Notation**, is the opposite of Polish notation. Here, the **operator comes after** the operands.
+
+| **Notation Type**            | **Expression** |
+| ---------------------------- | -------------- |
+| **Infix**                    | (3 + 4) × 5    |
+| **Reverse Polish (Postfix)** | 3 4 + 5 ×      |
+
+#### Applications of Polish Notation
+
+- **Computer Science**: Polish notation is widely used in compilers and interpreters to parse mathematical expressions.
+
+- **Stack-Based Calculators**: **HP calculators** and many programming languages use **Reverse Polish Notation (RPN)** due to its efficiency in stack-based evaluation.
+
+- **Logical Expressions**: Simplifies representation of logical formulas in **Boolean algebra**.
+
+## Automaton (Automata Theory)
+
+**An automaton** (オートマトン) (plural: automata) is a mathematical model of computation that **describes an abstract machine capable of reading input, changing states, and producing output based on specific rules.** Automata are foundational in theoretical computer science and are widely used to model systems, from simple pattern recognition to complex computational processes.
+
+**Basic Components of an Automaton:**
+
+- **States (Q)**:
+  A finite set of conditions or configurations the automaton can be in.
+
+- **Alphabet (Σ)**:
+  A finite set of symbols the automaton can read as input.
+
+- **Transition Function (δ)**:
+  Describes how the automaton moves from one state to another based on the input symbol.
+
+- **Start State (q₀)**:
+  The state where the automaton begins processing.
+
+- **Accept/Final States (F)**:
+  States where the automaton - **accepts** the input if it ends there.
+
