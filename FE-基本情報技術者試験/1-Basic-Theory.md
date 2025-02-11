@@ -20,6 +20,7 @@ Table of Contents
     - [**Polish Notation (Prefix Notation)**](#polish-notation-prefix-notation)
     - [**Reverse Polish Notation (RPN)**](#reverse-polish-notation-rpn)
   - [Automaton (Automata Theory)](#automaton-automata-theory)
+  - [AI](#ai)
 
 ## Data Unit
 
@@ -556,3 +557,19 @@ To evaluate a Polish notation expression:
 
 - **Accept/Final States (F)**:
   States where the automaton - **accepts** the input if it ends there.
+
+## AI
+
+Related Importat key words:
+
+- **Artificial intelligence (AI)** is a set of technologies that enable computers to perform a variety of advanced functions, including the ability to see, understand and translate spoken and written language, analyze data, make recommendations, and more.
+
+- **Machine learning (ML)** (機械学習) is a type of artificial intelligence (AI) that allows machines to learn from data and improve their performance over time. ML uses statistical algorithms to analyze data and make predictions.
+
+- **A neural network** is a method in artificial intelligence (AI) that teaches computers to process data in a way that is inspired by the human brain. It is a type of machine learning (ML) process, called deep learning, that uses interconnected nodes or neurons in a layered structure that resembles the human brain.
+
+- **Deep learning** (深層学習) is a type of machine learning that uses artificial neural networks to learn from data.
+
+- **Supervised learning** (教師あり学習) is defined as when a model gets trained on a “Labelled Dataset”. Labelled datasets have **both input and output parameters**. In Supervised Learning algorithms learn to map points between inputs and correct outputs. It has both training and validation datasets labelled.
+
+- **Unsupervised Learning** is a type of machine learning technique in which an algorithm discovers patterns and relationships using unlabeled data. Unlike supervised learning, unsupervised learning doesn’t involve providing the algorithm with labeled target outputs. The primary goal of Unsupervised learning is often to discover hidden patterns, similarities, or clusters within the data, which can then be used for various purposes, such as data exploration, visualization, dimensionality reduction, and more.
