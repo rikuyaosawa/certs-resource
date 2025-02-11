@@ -41,7 +41,15 @@ A **bit pattern** is a sequence of binary digits (bits)—0s and 1s—that repre
 
 ### Radix Conversion and Digit Weight
 
-**Radix conversion (基数変換)** is the process of converting numbers from one base (radix) to another, such as from binary to decimal, or decimal to hexadecimal .
+> [!IMPORTANT]
+>
+> **Radix conversion (基数変換)** is the process of converting numbers from one base (radix) to another, such as from binary to decimal, or decimal to hexadecimal .
+>
+> **A repeating decimal or recurring decimal** (循環少数) is a decimal representation of a number whose digits are eventually periodic (that is, after some place, the same sequence of digits is repeated forever); if this sequence consists only of zeros (that is if there is only a finite number of nonzero digits), the decimal is said to be terminating, and is not considered as repeating.
+>
+> ```
+> 0.55555....  <- repeating
+> ```
 
 **Digit weight (桁の重み)** refers to the value assigned to a digit based on its position in a number, determined by the base (radix) of the number system. It is calculated as the base raised to the power of the digit's position index.
 
@@ -267,7 +275,7 @@ Binary subtraction can be done using two's complement, which simplifies the proc
 
 ## Shift Operations
 
-> [!IMPORTANT] MUST KNOW
+> [!IMPORTANT]
 >
 > **Shift operations** (シフト演算) are fundamental bitwise operations that manipulate the bits of a binary number by moving them to the left or right. They are crucial for various tasks in computer science, from low-level hardware control to high-level algorithms. There are two main types of shift operations:
 
@@ -548,4 +556,3 @@ To evaluate a Polish notation expression:
 
 - **Accept/Final States (F)**:
   States where the automaton - **accepts** the input if it ends there.
-
